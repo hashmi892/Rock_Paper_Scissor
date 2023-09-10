@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags and title -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <!-- Link to your external CSS and JS files -->
+    <link rel="stylesheet" href="sass/main.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <!-- Main content container -->
+    <div id="main" class="container">
+      <!-- Game title with animation -->
+      <h1 class="focus-in-contract-bck heading">Rock Paper Scissors Game</h1>
+      <!-- Instructions -->
+      <p class="choose">Choose your move:</p>
+      <!-- Buttons for player's moves -->
+      <div class="buttons">
+        <button id="rock" class="btn">
+          &#x1f44a; <br />
+          Rock
+        </button>
+        <button id="paper" class="btn">
+          &#x1f590; <br />
+          Paper
+        </button>
+        <button id="scissor" class="btn">
+          &#x270c; <br />
+          Scissor
+        </button>
+      </div>
+      <!-- User and computer selections -->
+      <p id="Selection">
+        Your Select:
+        <span id="user_selection"></span>
+        Computer Select: <span id="computer_selection"></span>
+      </p>
+      <!-- Result message -->
+      <p id="result">Let's Play</p>
+      <!-- Scores -->
+      <p id="score">
+        Your Score: <span id="user_score">0</span> Computer score:
+        <span id="computer_score">0</span>
+      </p>
+    </div>
+  </body>
+</html>

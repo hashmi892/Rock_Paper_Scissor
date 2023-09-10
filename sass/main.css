@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+#main {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 500px;
+  color: #fff;
+  background-image: linear-gradient(108.7deg, rgb(221, 22, 224) 11%, rgb(111, 22, 190) 88.2%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px;
+  border-radius: 10px;
+}
+#main .heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+#main .focus-in-contract-bck {
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+#main .choose {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+}
+#main .buttons {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#main .buttons #rock {
+  background-color: #ff0000;
+}
+#main .buttons #paper {
+  background-color: #2196f3;
+}
+#main .buttons #scissor {
+  background-color: #4caf50;
+}
+#main .buttons .btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+#main .buttons .btn:focus {
+  opacity: 0.7;
+}
+#main #result {
+  letter-spacing: 1.3px;
+  font-size: 20px;
+}
+#main #score {
+  letter-spacing: 1.3px;
+  margin: 20px auto;
+  font-size: 20px;
+}
+#main #score #user_score {
+  color: #258cf0;
+}
+#main #score #computer_score {
+  color: #fff200;
+}
+#main #Selection {
+  letter-spacing: 1.3px;
+  margin: 20px auto;
+  font-size: 20px;
+}
+#main #Selection #user_selection {
+  color: #2196f3;
+}
+#main #Selection #computer_selection {
+  color: #fff200;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+#main {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 500px;
+  color: #fff;
+  background-image: linear-gradient(
+    108.7deg,
+    rgba(221, 22, 224, 1) 11%,
+    rgba(111, 22, 190, 1) 88.2%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px;
+  border-radius: 10px;
+
+  .heading {
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .focus-in-contract-bck {
+    animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+  }
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      transform: translateZ(300px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(12px);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  .choose {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+  }
+
+  .buttons {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    #rock {
+      background-color: #ff0000;
+    }
+    #paper {
+      background-color: #2196f3;
+    }
+    #scissor {
+      background-color: #4caf50;
+    }
+    .btn {
+      font-size: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      color: #fff;
+      transition: all 0.5s ease-in-out;
+      &:focus {
+        opacity: 0.7;
+      }
+    }
+  }
+  #result {
+    letter-spacing: 1.3px;
+    font-size: 20px;
+  }
+
+  #score {
+    letter-spacing: 1.3px;
+    margin: 20px auto;
+    font-size: 20px;
+    #user_score {
+      color: #258cf0;
+    }
+    #computer_score {
+      color: #fff200;
+    }
+  }
+
+  #Selection {
+    letter-spacing: 1.3px;
+    margin: 20px auto;
+    font-size: 20px;
+    #user_selection {
+      color: #2196f3;
+    }
+    #computer_selection {
+      color: #fff200;
+    }
+  }
+}
